@@ -15,6 +15,5 @@ while True:
         elif acc>=j:
             acc=acc-j
     print("successfull transaction")
-    print("current balance is=" + str(acc))
  else :
     print("please type a correct action")
