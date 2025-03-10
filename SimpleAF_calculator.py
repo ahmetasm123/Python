@@ -1,3 +1,16 @@
+def add(st,nd):
+    global res
+    res = st + nd
+def sub(st,nd):
+    global res
+    res = st - nd
+def mul(st,nd):
+    global res
+    res = st * nd
+def div(st,nd):
+    global res
+    res = st / nd
+
 while True:
  calc= str(input("whats the function= "))
  st= int(input("your first number= "))
@@ -5,15 +18,15 @@ while True:
  eq="="
  match calc:
   case "+":
-      res = st + nd
+      add(st,nd)
       clc = "+"
   case "-":
-      res = st - nd
+      sub(st,nd)
       clc = "-"
   case "/":
-      res = st / nd
+      div(st,nd)
       clc = "/"
   case "*":
-      res = st * nd
+      mul(st,nd)
       clc = "*"
  print(st, clc, nd, eq, res)
