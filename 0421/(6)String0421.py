@@ -1,0 +1,5 @@
+x = str(input("type a random word: "))
+y = int(input("type a random number: "))
+z = str(input("type a random letter: "))
+ans1 = x.replace(x[y-1],z[0])
+print(ans1)
