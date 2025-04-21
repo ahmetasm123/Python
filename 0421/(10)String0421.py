@@ -1,13 +1,10 @@
-x = str(input("type a random word: "))
+x = str(input("Type a random word: "))
 x = x.lower()
-a = x.count("a")
-e = x.count("e")
-i = x.count("i")
-ı = x.count("ı")
-o = x.count("o")
-ö = x.count("ö")
-u = x.count("u")
-ü = x.count("ü")
 
-ans1 = (a + e + i + ı + o + ö + u + ü)
-print(ans1)
+ans1 = "aeıioöuü"
+ans3 = 0
+
+for i in x:
+    if i in ans1:
+        ans3 += 1
+print("Total:", str(ans3))
