@@ -1,0 +1,5 @@
+x= int(input("first exam: "))
+y= int(input("second exam: "))
+z= int(input("third exam: "))
+lst=(x,y,z)
+print((f"{(lst[0]+lst[1]+lst[2])/3:.2f}"))
